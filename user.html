@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuario</title>
+    <link rel="stylesheet" href="styles/menu-nav.css" />
+    <link rel="stylesheet" href="styles/user.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="horizontal-menu plain">
+        <ul>
+          <li><a href="#">Runs</a></li>
+          <li><a href="#">Score</a></li>
+          <li><a href="#">Clarifications</a></li>
+          <li class="active"><a href="#">Users</a></li>
+          <li><a href="#">Problems</a></li>
+          <li><a href="#">Languages</a></li>
+          <li><a href="#">Answers</a></li>
+          <li><a href="#">Misc</a></li>
+        </ul>
+        <hr />
+        <ul>
+          <li><a href="#">Tasks</a></li>
+          <li><a href="#">Site</a></li>
+          <li><a href="#">Contests</a></li>
+          <li><a href="#">Logs</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Backups</a></li>
+          <li><a href="#">Options</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Site</th>
+            <th>Username</th>
+            <th>Type</th>
+            <th>Ip</th>
+            <th>Last login</th>
+            <th>Last logout</th>
+            <th>Enabled</th>
+            <th>Multi</th>
+            <th>Fullname</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>James</td>
+            <td>Algo</td>
+            <td>james-U</td>
+            <td>Algo</td>
+            <td>192.168.0.1</td>
+            <td>Marzo 12</td>
+            <td>Marzo 14</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>James Gomez</td>
+            <td>Algo</td>
+          </tr>
+          <tr>
+            <td>Clarissa</td>
+            <td>Algo</td>
+            <td>clarissa-U</td>
+            <td>Algo</td>
+            <td>192.169.0.2</td>
+            <td>Abril 12</td>
+            <td>Abril 14</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>Clarissa P.</td>
+            <td>Algo</td>
+          </tr>
+          <tr>
+            <td>Daniel</td>
+            <td>Algo</td>
+            <td>daniel-U</td>
+            <td>Algo</td>
+            <td>192.166.0.0</td>
+            <td>Mayo 12</td>
+            <td>Mayo 14</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>Daniel L.</td>
+            <td>Algo</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form class="user-form" action="#" method="post">
+        <div class="form-header">
+          <h1>Create user</h1>
+        </div>
+
+        <div class="form-body">
+          <div class="horizontal-group">
+            <div class="form-group left">
+              <label for="usersite" class="label-title">User site number</label>
+              <input
+                type="text"
+                id="usersite"
+                class="form-input"
+                placeholder="enter your user site number"
+              />
+            </div>
+            <div class="form-group right">
+              <label for="usernumber" class="label-title">User number</label>
+              <input
+                type="text"
+                id="usernumber"
+                class="form-input"
+                placeholder="enter your user number"
+              />
+            </div>
+            <div class="form-group right">
+              <label for="username" class="label-title">Username</label>
+              <input
+                type="text"
+                id="username"
+                class="form-input"
+                placeholder="enter your username"
+              />
+            </div>
+          </div>
+          <div class="horizontal-group">
+            <div class="form-group left">
+              <label for="icpc" class="label-title">ICPC ID</label>
+              <input
+                type="text"
+                id="icpc"
+                class="form-input"
+                placeholder="enter your ICPC ID"
+              />
+            </div>
+            <div class="form-group right">
+              <label for="typerole" class="label-title">Type</label>
+              <select class="form-input" id="typerole">
+                <option value="Team">Team</option>
+                <option value="Judge">Judge</option>
+                <option value="Admin">Admin</option>
+                <option value="Staff">Staff</option>
+                <option value="Score">Score</option>
+                <option value="Site">Site</option>
+              </select>
+            </div>
+            <div class="form-group right">
+              <label for="enable" class="label-title">Enable</label>
+              <div class="input-group">
+                <label for="Yes"
+                  ><input type="radio" name="enable" value="Yes" id="Yes" />
+                  Yes</label
+                >
+                <label for="No"
+                  ><input type="radio" name="enable" value="No" id="No" />
+                  No</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="horizontal-group">
+            <div class="form-group left">
+              <label for="multilogins" class="label-title">Multilogins</label>
+              <div class="input-group">
+                <label for="Yes"
+                  ><input
+                    type="radio"
+                    name="multilogins"
+                    value="Yes"
+                    id="Yes"
+                  />
+                  Yes</label
+                >
+                <label for="No"
+                  ><input type="radio" name="multilogins" value="No" id="No" />
+                  No</label
+                >
+              </div>
+            </div>
+            <div class="form-group right">
+              <label for="userfull" class="label-title">User Full Name</label>
+              <input
+                type="text"
+                id="userfull"
+                class="form-input"
+                placeholder="enter your full name"
+              />
+            </div>
+            <div class="form-group right">
+              <label for="userdesc" class="label-title">User description</label>
+              <input
+                type="text"
+                id="userdesc"
+                class="form-input"
+                placeholder="enter your description"
+              />
+            </div>
+          </div>
+          <div class="horizontal-group">
+            <div class="form-group left">
+              <label for="userip" class="label-title">User ip</label>
+              <input
+                type="text"
+                id="userip"
+                class="form-input"
+                placeholder="enter your user ip"
+              />
+            </div>
+            <div class="form-group right">
+              <label for="retypepassword" class="label-title">Retype Password</label>
+              <input
+                type="password"
+                id="retypepassword"
+                class="form-input"
+                placeholder="retype your password"
+              />
+            </div>
+            <div class="form-group right">
+              <label for="password" class="label-title">Password</label>
+              <input
+                type="password"
+                id="password"
+                class="form-input"
+                placeholder="enter your password"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          <button type="submit" class="btn" onclick="sendUser()">Send</button>
+          <button class="btn-cancel" onclick="cancelUser()">Cancel</button>
+        </div>
+      </form>
+      <script src="scripts/windows-confirm.js"></script>
+    </main>
+  </body>
+</html>
